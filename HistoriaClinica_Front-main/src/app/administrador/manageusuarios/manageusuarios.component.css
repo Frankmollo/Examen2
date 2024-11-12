@@ -1,0 +1,113 @@
+/* Estilos para el contenedor de usuarios */
+.usuarios-container {
+  padding: 25px;
+  background-color: #f9fafb;  /* Fondo suave y claro */
+  border-radius: 12px;  /* Bordes más redondeados */
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Sombra ligera para darle profundidad */
+  transition: all 0.3s ease-in-out;  /* Transición suave */
+}
+
+.usuarios-container:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);  /* Efecto de sombra al pasar el mouse */
+}
+
+/* Estilo para los títulos */
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #3677d8;  /* Azul contrastante */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos para los grupos de entrada (input) */
+.nz-input-group {
+  margin-bottom: 25px;  /* Mayor espacio entre los elementos */
+  display: flex;
+  flex-direction: column;
+}
+
+.nz-input-group input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1e8ff;  /* Borde suave para inputs */
+  background-color: #fff;
+  font-size: 16px;
+  color: #4a8bba;  /* Color de texto suave */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nz-input-group input:focus {
+  border-color: #4f8df9;  /* Borde azul cuando el input está en foco */
+  box-shadow: 0 0 5px rgba(79, 141, 249, 0.3);  /* Sombra azul en foco */
+}
+
+/* Estilos para la tabla */
+.nz-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.nz-table thead {
+  background-color: #e3f2fd;  /* Fondo suave para el encabezado */
+  color: #3f6f9f;
+}
+
+.nz-table th, .nz-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0efff;
+}
+
+.nz-table th {
+  font-weight: 600;
+}
+
+.nz-table tbody tr:nth-child(even) {
+  background-color: #f2f9ff;  /* Alternancia de filas */
+}
+
+.nz-table tbody tr:hover {
+  background-color: #d3e9ff;  /* Efecto hover con fondo destacado */
+  cursor: pointer;
+}
+
+/* Estilos para la paginación */
+.nz-pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nz-pagination button {
+  padding: 12px 20px;
+  background-color: #4f8df9;  /* Azul vibrante para botones */
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 16px;
+}
+
+.nz-pagination button:disabled {
+  background-color: #c1d9f5;  /* Color deshabilitado para los botones */
+  cursor: not-allowed;
+}
+
+.nz-pagination button:hover:not(:disabled) {
+  background-color: #2e68bb;  /* Azul oscuro en hover */
+  transform: scale(1.05);  /* Efecto de escala en hover */
+}
+
+/* Sombra y enfoque para los botones */
+.nz-pagination button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(79, 141, 249, 0.3);  /* Sombra al hacer clic */
+}

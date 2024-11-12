@@ -1,0 +1,101 @@
+.departamentos-container {
+  padding: 24px;
+  background-color: #f4f8fc;
+  border-radius: 10px;
+  margin-top: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 24px;
+  font-size: 22px;
+  color: #333;
+  font-weight: 600;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 8px;
+}
+
+.create-departamento {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.create-departamento nz-input-group {
+  flex: 1;
+  margin-right: 12px;
+}
+
+.create-btn {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.create-btn:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.nz-table {
+  margin-bottom: 24px;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.edit-btn,
+.delete-btn,
+.save-btn,
+.cancel-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+.edit-btn {
+  background-color: #17a2b8;
+}
+
+.edit-btn:hover {
+  background-color: #138496;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.save-btn {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.save-btn:hover {
+  background-color: #e0a800;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+}
+
+.cancel-btn:hover {
+  background-color: #5a6268;
+}

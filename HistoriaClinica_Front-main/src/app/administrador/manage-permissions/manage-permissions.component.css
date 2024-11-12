@@ -1,0 +1,66 @@
+/* Estilos para el contenedor de permisos */
+.permissions-container {
+  padding: 25px;
+  background-color: #f9fafb;  /* Color de fondo suave y claro */
+  border-radius: 12px;  /* Bordes más redondeados */
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Sombra ligera para darle profundidad */
+  transition: all 0.3s ease-in-out;  /* Transición suave */
+}
+
+.permissions-container:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);  /* Efecto de sombra al pasar el mouse */
+}
+
+/* Estilos para los títulos */
+h2 {
+  margin-bottom: 15px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #3f6f9f;  /* Color azul suave para los títulos */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos para los elementos de permisos */
+.permission-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;  /* Más espacio entre cada permiso */
+  font-size: 16px;
+  color: #4a8bba;  /* Color más suave para el texto */
+  font-weight: 500;
+}
+
+/* Mejoras visuales para los botones */
+button[nz-button] {
+  width: 100%;
+  padding: 12px 20px;  /* Espaciado interno adecuado */
+  background-color: #4f8df9;  /* Azul vibrante */
+  color: #fff;  /* Texto blanco para contraste */
+  border: none;
+  border-radius: 30px;  /* Bordes redondeados para un diseño moderno */
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Sombra sutil para dar profundidad */
+}
+
+button[nz-button]:hover {
+  background-color: #2e68bb;  /* Azul más oscuro en hover */
+  transform: scale(1.05);  /* Efecto de escala en hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);  /* Sombra más pronunciada en hover */
+}
+
+button[nz-button]:disabled {
+  background-color: #c1d9f5;  /* Azul deshabilitado para el botón */
+  cursor: not-allowed;
+}
+
+/* Estilo adicional para accesibilidad y claridad */
+button[nz-button]:focus {
+  outline: none;  /* Eliminar contorno al hacer clic */
+}

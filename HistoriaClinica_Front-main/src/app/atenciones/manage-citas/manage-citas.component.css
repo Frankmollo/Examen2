@@ -1,0 +1,124 @@
+/* Estilos para el contenedor de citas */
+.citas-container {
+    padding: 30px;
+    background-color: #f9fafb;  /* Fondo claro y suave */
+    border-radius: 12px;  /* Bordes más redondeados */
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra ligera para profundidad */
+    transition: all 0.3s ease-in-out;  /* Transición suave al pasar el mouse */
+}
+
+.citas-container:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);  /* Sombra más notable al hacer hover */
+}
+
+.citas-container h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #3677d8;  /* Azul contrastante para el título */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor de filtros */
+.filters-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;  /* Permite que los filtros se ajusten en pantallas pequeñas */
+    justify-content: flex-start;
+}
+
+/* Botones con estilo más atractivo */
+button[nz-button] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background-color: #4f8df9;  /* Azul vibrante para los botones */
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+button[nz-button]:hover {
+    background-color: #2e68bb;  /* Azul oscuro en hover */
+    transform: scale(1.05);  /* Efecto de escala para los botones */
+}
+
+button[nz-button]:disabled {
+    background-color: #c1d9f5;  /* Color de fondo deshabilitado */
+    cursor: not-allowed;
+}
+
+/* Contenedor de la tabla */
+.table-container {
+    margin-top: 30px;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;  /* Para bordes redondeados */
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #e0efff;  /* Borde suave */
+    text-align: left;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #4a8bba;  /* Azul suave para el texto */
+}
+
+/* Encabezados de la tabla */
+th {
+    font-weight: 600;
+    background-color: #e3f2fd;  /* Fondo suave para los encabezados */
+    color: #3f6f9f;  /* Azul más oscuro para contraste */
+}
+
+/* Filas alternas de la tabla */
+tbody tr:nth-child(even) {
+    background-color: #f2f9ff;  /* Alternancia con fondo suave */
+}
+
+/* Efecto hover sobre las filas */
+tbody tr:hover {
+    background-color: #d3e9ff;  /* Fondo más destacado en hover */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Indicador de carga */
+.loading-indicator {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #1890ff;  /* Color de texto en azul para la carga */
+    font-weight: 600;
+    letter-spacing: 1px;
+    animation: pulse 1.5s infinite;  /* Efecto de pulso para el indicador */
+}
+
+/* Animación de pulso */
+@keyframes pulse {
+    0% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
